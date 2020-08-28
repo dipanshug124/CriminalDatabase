@@ -1,0 +1,601 @@
+,Name,id_no,Gender,Crime,inJail,Country
+0,Domanic,100,M,hacking,Y,Germany
+1,Patty,101,M,terrorism,Y,Japan
+2,Inger,102,F,kidnapping,Y,New Zealand
+3,Harry,103,M,shoplifting,Y,Pakistan
+4,Jessey,104,F,burglary,N,Russia
+5,Jemaine,105,M,burglary,Y,Nepal
+6,Burr,106,M,hacking,N,Bangladesh
+7,Sharvon,107,F,human trafficking,N,Japan
+8,Eva,108,F,kidnapping,N,UK
+9,Linnette,109,F,theft,Y,Russia
+10,Genie,10_,F,hacking,Y,Russia
+11,Deavon,110,M,vandalism,N,Russia
+12,Lincy,111,F,smuggling,Y,New Zealand
+13,Merline,112,F,murder,N,Nepal
+14,Raney,113,F,fraud,Y,Russia
+15,Ilo,114,F,vandalism,Y,Canada
+16,Isabelle,115,F,hacking,N,Sri Lanka
+17,Danella,116,F,assault,Y,Russia
+18,Jesslyn,117,F,hacking,Y,Japan
+19,Solea,118,F,hijacking,Y,Pakistan
+20,Rupali,119,F,burglary,Y,New Zealand
+21,Regenia,11_,F,murder,Y,Russia
+22,Caton,120,M,kidnapping,Y,UK
+23,Isobel,121,F,smuggling,N,Australia
+24,Illyana,122,F,drug trafficking,N,China
+25,Durwin,123,M,hacking,Y,Pakistan
+26,Cecil,124,F,fraud,N,Japan
+27,Aubriel,125,F,murder,N,Germany
+28,Phillis,126,F,burglary,N,Nepal
+29,Corydon,127,M,hacking,N,Pakistan
+30,Woodford,128,M,terrorism,Y,Canada
+31,Nakhi,129,M,kidnapping,N,Japan
+32,Eliyah,12_,F,assault,N,UK
+33,Davia,130,F,fraud,N,New Zealand
+34,Loucille,131,F,human trafficking,Y,Japan
+35,Chia,132,M,assault,Y,UK
+36,Arnetta,133,F,hacking,N,Bangladesh
+37,Elija,134,M,vandalism,N,India
+38,Larena,135,F,terrorism,Y,USA
+39,Wilver,136,M,assault,N,Nepal
+40,Audy,137,M,murder,Y,UK
+41,Demar,138,M,vandalism,N,Germany
+42,Andraya,139,F,assault,N,Australia
+43,Wanda,13_,F,assault,N,UK
+44,Ladell,140,M,human trafficking,N,India
+45,Okley,141,M,theft,Y,UK
+46,Miyoko,142,F,fraud,N,Sri Lanka
+47,Manolo,143,M,assault,N,Pakistan
+48,Nick,144,M,theft,Y,Russia
+49,Ladarrion,145,M,burglary,Y,Canada
+50,Autumm,146,F,fraud,N,Australia
+51,Nalini,147,F,human trafficking,Y,Australia
+52,Shyne,148,M,vandalism,N,Australia
+53,Lavita,149,F,vandalism,Y,China
+54,Jeffrey,14_,F,burglary,N,Australia
+55,Rafael,150,M,hijacking,Y,India
+56,Hue,151,M,burglary,N,Australia
+57,Tyvan,152,M,shoplifting,N,India
+58,Inez,153,F,hacking,N,UK
+59,Tavarious,154,M,murder,Y,Russia
+60,Casandra,155,F,burglary,Y,Russia
+61,Deno,156,M,burglary,Y,India
+62,Francesco,157,M,hacking,N,Russia
+63,Cortney,158,F,burglary,N,USA
+64,Carlis,159,M,burglary,N,Australia
+65,Wilbur,15_,M,hijacking,N,China
+66,Jovante,160,M,murder,Y,Australia
+67,Kriss,161,M,vandalism,N,Canada
+68,Raeghan,162,F,theft,Y,China
+69,Tylan,163,M,hijacking,N,New Zealand
+70,Trinity,164,F,assault,N,New Zealand
+71,Kare,165,F,assault,Y,Australia
+72,Nilajah,166,F,assault,N,USA
+73,Jacklyn,167,F,shoplifting,N,UK
+74,Delanee,168,F,kidnapping,N,Bangladesh
+75,Tanna,169,F,theft,Y,Sri Lanka
+76,Jazmyne,16_,F,fraud,Y,Germany
+77,Dyrell,170,M,drug trafficking,N,Japan
+78,Aalana,171,F,hijacking,N,Germany
+79,Kellene,172,F,smuggling,N,India
+80,Kegan,173,M,drug trafficking,Y,Nepal
+81,Christena,174,F,terrorism,N,Sri Lanka
+82,Aastha,175,F,hacking,N,USA
+83,Joray,176,M,drug trafficking,Y,Australia
+84,Coralynn,177,F,burglary,Y,Nepal
+85,Terilyn,178,F,murder,Y,Bangladesh
+86,Lilliana,179,F,terrorism,Y,Nepal
+87,Kinlea,17_,F,fraud,Y,Nepal
+88,Jessenia,180,F,smuggling,N,Japan
+89,Durante,181,M,drug trafficking,N,Pakistan
+90,Soham,182,M,burglary,N,Russia
+91,Marykate,183,F,shoplifting,N,Bangladesh
+92,Cady,184,F,smuggling,N,Germany
+93,Illa,185,F,hijacking,N,Japan
+94,Ceren,186,F,drug trafficking,Y,Nepal
+95,Madee,187,F,drug trafficking,Y,China
+96,Merrilyn,188,F,theft,Y,USA
+97,Arleen,189,F,vandalism,Y,Canada
+98,Leorah,18_,F,smuggling,N,USA
+99,Lenton,190,M,assault,N,New Zealand
+100,Kalyn,191,F,smuggling,Y,India
+101,Jerrelle,192,M,burglary,Y,USA
+102,Arta,193,F,terrorism,N,Russia
+103,Devi,194,F,drug trafficking,N,Canada
+104,Joni,195,F,hijacking,Y,Germany
+105,Leevi,196,M,assault,N,New Zealand
+106,Hadyn,197,M,vandalism,Y,Germany
+107,Carlon,198,M,shoplifting,N,USA
+108,Clemence,199,F,burglary,N,New Zealand
+109,Lessie,19_,F,assault,N,Japan
+110,Karle,1__,M,murder,N,New Zealand
+111,Donice,200,F,smuggling,N,Germany
+112,Glynis,201,F,burglary,N,Japan
+113,Aubie,202,M,shoplifting,Y,Sri Lanka
+114,Ellyn,203,F,murder,N,China
+115,Khamila,204,F,human trafficking,Y,Pakistan
+116,Matei,205,M,human trafficking,N,India
+117,Eliza,206,F,terrorism,Y,India
+118,Lala,207,F,human trafficking,Y,Pakistan
+119,Marty,208,M,hijacking,N,Nepal
+120,Evalynn,209,F,shoplifting,Y,Russia
+121,Vela,20_,F,shoplifting,Y,Bangladesh
+122,Savera,210,F,smuggling,N,India
+123,Lawonda,211,F,smuggling,N,Russia
+124,Leshea,212,F,murder,N,Pakistan
+125,Susan,213,F,human trafficking,Y,USA
+126,Cherette,214,F,fraud,N,Sri Lanka
+127,Issa,215,M,murder,Y,Nepal
+128,Jiovanna,216,F,murder,N,Pakistan
+129,Allan,217,M,shoplifting,Y,USA
+130,Jillaine,218,F,burglary,Y,India
+131,Severa,219,F,shoplifting,N,Russia
+132,Jauron,21_,M,assault,N,Canada
+133,Dorthea,220,F,human trafficking,Y,China
+134,Demetric,221,M,hacking,Y,Sri Lanka
+135,Elzadie,222,F,burglary,Y,Australia
+136,Aliene,223,F,theft,Y,India
+137,Lashaunda,224,F,assault,Y,Sri Lanka
+138,Saddie,225,F,burglary,N,Canada
+139,Douglass,226,M,vandalism,Y,Sri Lanka
+140,Batu,227,M,kidnapping,Y,Nepal
+141,Eliane,228,F,assault,N,China
+142,Lasheika,229,F,fraud,N,Pakistan
+143,Cordelia,22_,F,burglary,Y,Germany
+144,Rush,230,M,vandalism,Y,USA
+145,Candelario,231,M,hijacking,N,Canada
+146,Deryck,232,M,drug trafficking,N,UK
+147,Shanique,233,F,shoplifting,Y,USA
+148,Azael,234,M,assault,N,USA
+149,Arwa,235,F,hacking,Y,Australia
+150,Adisyn,236,F,vandalism,Y,Germany
+151,Altariq,237,M,shoplifting,Y,UK
+152,Alithea,238,F,vandalism,Y,Canada
+153,Daja,239,F,drug trafficking,N,China
+154,Anthonette,23_,F,human trafficking,Y,China
+155,Torian,240,M,drug trafficking,Y,India
+156,Axel,241,M,smuggling,N,Japan
+157,Mabell,242,F,theft,N,Canada
+158,Kailina,243,F,assault,Y,China
+159,Kymon,244,M,murder,Y,Russia
+160,Jethro,245,M,hijacking,Y,Pakistan
+161,Rapheal,246,M,kidnapping,N,Pakistan
+162,Garrett,247,F,vandalism,N,USA
+163,Merwin,248,M,smuggling,Y,China
+164,Sharie,249,F,smuggling,Y,India
+165,Meaghen,24_,F,kidnapping,Y,Australia
+166,Sylvester,250,M,theft,Y,China
+167,Horton,251,M,fraud,N,USA
+168,Charon,252,F,terrorism,N,Australia
+169,Huck,253,M,theft,Y,Nepal
+170,Cloyd,254,M,murder,N,Canada
+171,Aline,255,F,shoplifting,N,Japan
+172,Ebonie,256,F,vandalism,Y,Bangladesh
+173,Johnell,257,M,terrorism,Y,Nepal
+174,Clara,258,M,kidnapping,N,Germany
+175,Akram,259,M,vandalism,Y,USA
+176,Henry,25_,F,hijacking,N,UK
+177,Ashanti,260,M,terrorism,N,Canada
+178,Jarae,261,F,murder,Y,Germany
+179,Leif,262,M,drug trafficking,Y,Australia
+180,Alessandra,263,F,human trafficking,Y,USA
+181,Ferd,264,M,terrorism,N,Russia
+182,Stuart,265,M,hacking,Y,USA
+183,Sakina,266,F,drug trafficking,Y,Canada
+184,Klinton,267,M,terrorism,N,UK
+185,Dhameer,268,M,terrorism,Y,Pakistan
+186,Zakya,269,F,theft,N,Japan
+187,Denicia,26_,F,assault,N,Bangladesh
+188,Caleah,270,F,shoplifting,Y,Japan
+189,Marney,271,F,smuggling,Y,Pakistan
+190,Trygg,272,M,hijacking,Y,Russia
+191,Tyrus,273,M,smuggling,Y,India
+192,Sena,274,F,hijacking,Y,Germany
+193,Mellinda,275,F,hacking,Y,Germany
+194,Arlie,276,F,human trafficking,Y,Nepal
+195,Collen,277,F,drug trafficking,N,UK
+196,Sylvan,278,F,theft,Y,Canada
+197,Akari,279,M,terrorism,Y,Bangladesh
+198,Dominigue,27_,F,burglary,N,Canada
+199,Tere,280,F,drug trafficking,N,New Zealand
+200,Eriberto,281,M,kidnapping,Y,Russia
+201,Inga,282,F,assault,N,Pakistan
+202,Pratham,283,M,human trafficking,Y,Canada
+203,Shyree,284,F,hijacking,N,Japan
+204,Keelie,285,F,assault,Y,Bangladesh
+205,Georgeana,286,F,burglary,Y,Germany
+206,Mozell,287,F,fraud,N,China
+207,Daevon,288,M,fraud,Y,Bangladesh
+208,Neida,289,F,burglary,Y,USA
+209,Harvie,28_,M,terrorism,N,UK
+210,Jaqari,290,M,drug trafficking,N,China
+211,Aparna,291,F,theft,N,India
+212,Viva,292,F,kidnapping,N,Japan
+213,Gianelle,293,F,shoplifting,Y,Bangladesh
+214,Hipolito,294,M,hijacking,N,Pakistan
+215,Marisabel,295,F,hacking,Y,Japan
+216,Lenell,296,M,burglary,Y,Bangladesh
+217,Jame,297,F,vandalism,N,Japan
+218,Linsi,298,F,burglary,N,New Zealand
+219,Tawnie,299,F,terrorism,Y,UK
+220,Raseel,29_,F,kidnapping,Y,Russia
+221,Tomasa,2__,F,drug trafficking,Y,Russia
+222,Amey,300,F,burglary,Y,New Zealand
+223,Alayssa,301,F,human trafficking,N,Canada
+224,Fae,302,F,assault,Y,Pakistan
+225,Christianna,303,F,terrorism,Y,Nepal
+226,Twilia,304,F,vandalism,N,USA
+227,Sueann,305,F,assault,N,Pakistan
+228,Marshel,306,M,burglary,N,UK
+229,Blondine,307,F,terrorism,Y,Sri Lanka
+230,Lavonia,308,F,theft,Y,New Zealand
+231,Dwane,309,M,vandalism,N,China
+232,Santina,30_,F,smuggling,Y,UK
+233,Lexxus,310,F,kidnapping,Y,Germany
+234,San,311,F,kidnapping,N,UK
+235,Dagmar,312,F,murder,N,UK
+236,Mamie,313,F,terrorism,N,Sri Lanka
+237,Sarrah,314,F,burglary,Y,India
+238,Azura,315,F,hijacking,N,Australia
+239,Lajoy,316,F,hijacking,Y,China
+240,Carter,317,F,vandalism,Y,Bangladesh
+241,Baruch,318,M,hacking,N,Germany
+242,Mikias,319,M,hijacking,N,USA
+243,Leah,31_,F,burglary,Y,USA
+244,Madalaine,320,F,human trafficking,N,Australia
+245,Alban,321,M,burglary,N,Canada
+246,Lenee,322,F,hacking,N,Nepal
+247,Earl,323,M,kidnapping,Y,Sri Lanka
+248,Kiaunna,324,F,kidnapping,Y,USA
+249,Lether,325,F,hacking,N,USA
+250,Clotilde,326,F,burglary,Y,Nepal
+251,Shariah,327,F,human trafficking,Y,USA
+252,Yaasmiyn,328,F,theft,Y,China
+253,Dameion,329,M,smuggling,N,Australia
+254,Mata,32_,F,drug trafficking,Y,Pakistan
+255,Atlanta,330,F,hijacking,Y,India
+256,Joannah,331,F,kidnapping,Y,Pakistan
+257,Marica,332,F,drug trafficking,Y,Canada
+258,Demorris,333,M,smuggling,N,China
+259,Ike,334,M,terrorism,N,Pakistan
+260,Hartley,335,F,theft,N,Nepal
+261,Nashira,336,F,drug trafficking,N,India
+262,Khrystyne,337,F,assault,Y,Sri Lanka
+263,Daytona,338,M,kidnapping,Y,New Zealand
+264,Keyonte,339,M,fraud,Y,UK
+265,Taishaun,33_,M,fraud,N,Canada
+266,Brion,340,M,vandalism,Y,Canada
+267,Jawanna,341,F,human trafficking,Y,Russia
+268,Yesenia,342,M,fraud,N,UK
+269,Juana,343,F,assault,N,China
+270,Dinisha,344,F,smuggling,Y,India
+271,Mayela,345,F,theft,Y,India
+272,Obinna,346,M,assault,Y,UK
+273,Laim,347,M,burglary,N,Australia
+274,Maclain,348,M,hijacking,Y,China
+275,Abigale,349,F,murder,N,Nepal
+276,Hilton,34_,M,smuggling,N,Canada
+277,Diva,350,F,assault,Y,Bangladesh
+278,Joanne,351,F,fraud,Y,China
+279,Carroll,352,F,hijacking,N,Japan
+280,Kimberlyann,353,F,murder,Y,Pakistan
+281,Kaleena,354,F,burglary,Y,Sri Lanka
+282,Magdaline,355,F,smuggling,Y,Russia
+283,Larena,356,F,kidnapping,N,Bangladesh
+284,Fernande,357,F,smuggling,Y,UK
+285,Letia,358,F,hacking,Y,Australia
+286,Alegra,359,F,fraud,N,USA
+287,Gaines,35_,M,vandalism,N,Japan
+288,Mossimo,360,M,shoplifting,N,Canada
+289,Kiersten,361,F,human trafficking,N,Nepal
+290,Joy,362,F,theft,N,Germany
+291,Ty,363,F,fraud,N,Pakistan
+292,Uvaldo,364,M,kidnapping,N,Pakistan
+293,Joane,365,F,hacking,Y,India
+294,Ada,366,M,burglary,Y,Nepal
+295,Marysol,367,F,hacking,Y,New Zealand
+296,Cristyle,368,F,hijacking,Y,China
+297,Aquilla,369,F,theft,Y,Sri Lanka
+298,Norma,36_,F,shoplifting,N,Japan
+299,Stpehanie,370,F,drug trafficking,N,Australia
+300,Erving,371,M,shoplifting,Y,Germany
+301,Ames,372,M,kidnapping,Y,Pakistan
+302,Trinidad,373,F,kidnapping,Y,Russia
+303,Pina,374,F,theft,Y,India
+304,Kymber,375,F,hacking,N,UK
+305,Corinne,376,F,drug trafficking,N,UK
+306,Starlet,377,F,burglary,Y,Nepal
+307,Nimrah,378,F,fraud,Y,New Zealand
+308,Langley,379,F,vandalism,N,Canada
+309,Elmer,37_,M,vandalism,N,India
+310,Orvin,380,M,vandalism,Y,China
+311,Weslie,381,M,drug trafficking,N,New Zealand
+312,Carlon,382,M,hacking,Y,Canada
+313,Lavinia,383,F,terrorism,Y,Bangladesh
+314,Demitri,384,M,hacking,N,Sri Lanka
+315,Brooks,385,M,human trafficking,Y,China
+316,Fermina,386,F,hijacking,N,Canada
+317,Olive,387,F,burglary,N,Sri Lanka
+318,Isadore,388,M,smuggling,N,UK
+319,Ramond,389,M,murder,N,Nepal
+320,Janette,38_,F,shoplifting,N,Bangladesh
+321,Sherelle,390,F,theft,Y,UK
+322,Carles,391,M,fraud,Y,Sri Lanka
+323,Jaysun,392,M,shoplifting,Y,Sri Lanka
+324,Orianna,393,F,theft,N,New Zealand
+325,Tallia,394,F,hacking,N,China
+326,Sharlet,395,F,terrorism,Y,Sri Lanka
+327,Tova,396,F,murder,Y,China
+328,Kinser,397,M,murder,N,USA
+329,Lemoyne,398,M,smuggling,Y,India
+330,Nanda,399,F,shoplifting,Y,USA
+331,Fredrich,39_,M,shoplifting,Y,Sri Lanka
+332,Brinton,3__,M,terrorism,N,USA
+333,Gaurav,400,M,assault,N,UK
+334,Iris,401,M,vandalism,Y,Canada
+335,Terrin,402,M,murder,Y,New Zealand
+336,Lior,403,F,hacking,N,Germany
+337,Rindi,404,F,smuggling,N,Sri Lanka
+338,Maria,405,M,fraud,N,Sri Lanka
+339,Lakima,406,F,hacking,Y,Sri Lanka
+340,Rylan,407,F,hijacking,Y,USA
+341,Lavoris,408,M,murder,N,Sri Lanka
+342,Deborha,409,F,theft,N,Nepal
+343,Anais,40_,F,assault,Y,USA
+344,Selden,410,M,human trafficking,N,UK
+345,Yariel,411,M,assault,N,China
+346,Tanayia,412,F,human trafficking,Y,Bangladesh
+347,Gabriella,413,F,hacking,N,Bangladesh
+348,Raquel,414,F,theft,Y,Pakistan
+349,Jakaila,415,F,kidnapping,Y,Bangladesh
+350,Curry,416,M,smuggling,Y,Sri Lanka
+351,Jammy,417,M,burglary,Y,Australia
+352,Gracy,418,F,terrorism,Y,Nepal
+353,Nikia,419,F,theft,N,China
+354,Bracha,41_,F,fraud,Y,Pakistan
+355,Hamilton,420,M,assault,Y,New Zealand
+356,Katrinka,421,F,shoplifting,Y,Pakistan
+357,Alexandar,422,M,hijacking,Y,Russia
+358,Debroha,423,F,hijacking,N,Germany
+359,Carlita,424,F,hacking,N,USA
+360,Pink,425,M,hacking,N,UK
+361,Brion,426,M,human trafficking,Y,China
+362,Hollie,427,F,burglary,N,Australia
+363,Rilley,428,F,kidnapping,N,USA
+364,Rodrigo,429,M,shoplifting,Y,Bangladesh
+365,Venola,42_,F,vandalism,Y,Bangladesh
+366,Shirly,430,F,smuggling,N,New Zealand
+367,Yashvi,431,F,kidnapping,Y,Canada
+368,Birtha,432,F,vandalism,N,Canada
+369,Rosita,433,F,hacking,N,USA
+370,Nickolette,434,F,kidnapping,N,Bangladesh
+371,Maxten,435,M,assault,N,Germany
+372,Vika,436,F,assault,Y,Nepal
+373,Michell,437,M,hacking,N,Germany
+374,Sherine,438,F,smuggling,N,Australia
+375,Meagan,439,M,kidnapping,Y,Bangladesh
+376,Sumit,43_,M,kidnapping,N,UK
+377,Oluwamayomikun,440,M,smuggling,N,Russia
+378,Delcie,441,F,assault,Y,New Zealand
+379,Lisa,442,M,fraud,N,Russia
+380,Shyeeda,443,F,kidnapping,Y,Australia
+381,Mahogony,444,F,drug trafficking,N,Pakistan
+382,Gearldine,445,F,human trafficking,Y,Australia
+383,Cornell,446,M,human trafficking,Y,Pakistan
+384,Olegario,447,M,smuggling,Y,USA
+385,Wiliam,448,M,shoplifting,Y,Sri Lanka
+386,Marquet,449,M,theft,Y,UK
+387,Rogelio,44_,M,murder,Y,Russia
+388,Eliyah,450,M,drug trafficking,N,Russia
+389,Vance,451,F,vandalism,Y,Canada
+390,Amato,452,M,vandalism,Y,Canada
+391,Shayne,453,F,human trafficking,Y,Sri Lanka
+392,Elsie,454,F,terrorism,Y,USA
+393,Toshua,455,F,vandalism,N,China
+394,Felicia,456,F,human trafficking,N,Pakistan
+395,Honesti,457,F,drug trafficking,N,Bangladesh
+396,Tailynn,458,F,vandalism,Y,USA
+397,Jarmal,459,M,drug trafficking,N,USA
+398,Jiovanny,45_,M,terrorism,Y,Sri Lanka
+399,Phillis,460,M,human trafficking,Y,UK
+400,Denia,461,F,fraud,Y,China
+401,Januell,462,M,burglary,N,Nepal
+402,Tecora,463,F,burglary,N,Canada
+403,Quantella,464,F,burglary,N,Japan
+404,Wen,465,M,hacking,N,China
+405,Marycruz,466,F,murder,N,Pakistan
+406,Chinmay,467,M,murder,Y,Bangladesh
+407,Devita,468,F,shoplifting,N,China
+408,Kirin,469,F,burglary,Y,Sri Lanka
+409,Marlaine,46_,F,human trafficking,Y,Sri Lanka
+410,Truett,470,M,burglary,Y,Russia
+411,Khale,471,M,human trafficking,N,Germany
+412,Sebastian,472,M,assault,Y,China
+413,Shajuanna,473,F,murder,Y,Pakistan
+414,Mahalia,474,F,burglary,N,Pakistan
+415,Kavya,475,F,burglary,N,Canada
+416,Stella,476,F,vandalism,Y,Sri Lanka
+417,Markos,477,M,kidnapping,Y,Japan
+418,Amelia,478,F,kidnapping,N,Pakistan
+419,Luanne,479,F,drug trafficking,N,Russia
+420,Deandre,47_,M,human trafficking,Y,New Zealand
+421,Shamir,480,F,terrorism,Y,Sri Lanka
+422,Terence,481,M,shoplifting,N,Bangladesh
+423,Sven,482,M,theft,Y,Sri Lanka
+424,Nyrobi,483,F,theft,N,China
+425,Tanee,484,F,assault,Y,India
+426,Garion,485,M,assault,N,Germany
+427,Kalissa,486,F,fraud,N,India
+428,Andres,487,M,vandalism,Y,Pakistan
+429,Bonnie,488,F,drug trafficking,Y,Germany
+430,Madylan,489,F,terrorism,N,Nepal
+431,Kenyatta,48_,M,hijacking,N,Australia
+432,Siegfried,490,M,shoplifting,Y,Russia
+433,Aril,491,F,terrorism,Y,China
+434,Myles,492,M,kidnapping,N,Australia
+435,Cynia,493,F,shoplifting,N,USA
+436,Yulanda,494,F,terrorism,N,Australia
+437,Josef,495,M,kidnapping,Y,Germany
+438,Ivery,496,M,fraud,Y,Russia
+439,Ember,497,F,murder,N,India
+440,Keymiah,498,F,burglary,Y,Germany
+441,Tracy,499,F,drug trafficking,Y,India
+442,Bibiana,49_,F,hacking,Y,Germany
+443,Silviano,4__,M,terrorism,N,Germany
+444,Roland,500,M,kidnapping,N,UK
+445,Saphronia,501,F,hijacking,Y,USA
+446,Nyrell,502,M,theft,Y,China
+447,Harriett,503,F,theft,Y,China
+448,Ellison,504,M,vandalism,N,USA
+449,Gerald,505,F,hacking,N,Sri Lanka
+450,Lyndzi,506,F,shoplifting,Y,Pakistan
+451,Tierra,507,F,fraud,Y,Australia
+452,Baltazar,508,M,theft,Y,Pakistan
+453,Jaden,509,M,burglary,Y,Bangladesh
+454,Ivone,50_,F,shoplifting,Y,Pakistan
+455,Gaetano,510,M,hacking,Y,India
+456,Sylvania,511,F,fraud,Y,Japan
+457,Layonna,512,F,murder,Y,Bangladesh
+458,Yvetta,513,F,human trafficking,N,India
+459,Juaquin,514,M,smuggling,N,New Zealand
+460,Mingo,515,M,smuggling,Y,Nepal
+461,Ceana,516,F,human trafficking,Y,Nepal
+462,Desha,517,F,terrorism,Y,India
+463,Rodney,518,M,assault,N,Nepal
+464,Daylan,519,M,murder,Y,UK
+465,Rhiley,51_,F,vandalism,Y,Germany
+466,Shirla,520,F,burglary,N,Nepal
+467,Lequita,521,F,burglary,Y,Nepal
+468,Yasmina,522,F,kidnapping,Y,India
+469,Agnes,523,M,kidnapping,Y,Sri Lanka
+470,Zeke,524,M,hijacking,Y,Canada
+471,Folashade,525,F,hacking,Y,Australia
+472,Anwar,526,F,hijacking,Y,USA
+473,Lawarence,527,M,hijacking,N,Australia
+474,Alexis,528,M,assault,N,Australia
+475,Rosanne,529,F,shoplifting,Y,Australia
+476,Captain,52_,M,smuggling,N,China
+477,Athene,530,F,vandalism,Y,India
+478,Laurinda,531,F,terrorism,N,Canada
+479,Erleen,532,F,shoplifting,N,Russia
+480,Kelcie,533,M,shoplifting,N,Bangladesh
+481,Ingris,534,F,assault,Y,Japan
+482,Trysta,535,F,kidnapping,Y,Pakistan
+483,Arlean,536,F,murder,N,Pakistan
+484,Leathia,537,F,shoplifting,Y,Nepal
+485,Rutherford,538,M,assault,N,Canada
+486,Lyrik,539,F,human trafficking,N,Japan
+487,Velma,53_,F,hijacking,Y,Russia
+488,Lacia,540,F,hijacking,Y,New Zealand
+489,Herve,541,M,kidnapping,Y,UK
+490,Kelcey,542,M,vandalism,Y,China
+491,Stryker,543,M,shoplifting,N,Australia
+492,Rosella,544,F,burglary,Y,India
+493,Olyvia,545,F,kidnapping,Y,India
+494,Adah,546,F,hijacking,Y,Sri Lanka
+495,Marco,547,M,fraud,N,New Zealand
+496,Yeshaya,548,M,theft,Y,New Zealand
+497,Arminta,549,F,murder,N,China
+498,Jemima,54_,F,smuggling,Y,Sri Lanka
+499,Adelaine,550,F,drug trafficking,Y,Germany
+500,Edmonia,551,F,burglary,N,Canada
+501,Lionel,552,M,assault,N,Pakistan
+502,Octavius,553,M,kidnapping,N,Canada
+503,Malinda,554,F,kidnapping,N,Pakistan
+504,Karli,555,F,smuggling,Y,Nepal
+505,Machell,556,F,theft,Y,Nepal
+506,Ki,557,M,murder,Y,Nepal
+507,Lorisa,558,F,hacking,Y,Japan
+508,Laureano,559,M,shoplifting,Y,UK
+509,Nathanael,55_,M,shoplifting,Y,Bangladesh
+510,Lamon,560,M,murder,N,Sri Lanka
+511,Kyrsti,561,F,shoplifting,Y,Australia
+512,Odelia,562,F,hacking,N,Pakistan
+513,Michealle,563,F,fraud,N,New Zealand
+514,Rollan,564,M,hijacking,Y,USA
+515,Felicitas,565,F,human trafficking,N,New Zealand
+516,Marjean,566,F,hijacking,Y,Canada
+517,Sorsha,567,F,hacking,Y,Russia
+518,Mackayla,568,F,terrorism,N,Nepal
+519,Boone,569,M,smuggling,N,Australia
+520,Zaidan,56_,M,hacking,Y,Canada
+521,Lailonie,570,F,vandalism,N,New Zealand
+522,Markus,571,M,assault,N,Germany
+523,Rasheema,572,F,murder,Y,Russia
+524,Shahzeb,573,M,drug trafficking,N,USA
+525,Tyzae,574,M,kidnapping,N,Germany
+526,Torrey,575,M,murder,Y,Australia
+527,Thy,576,F,shoplifting,Y,Nepal
+528,Tress,577,F,theft,N,Bangladesh
+529,Nakyiah,578,F,human trafficking,Y,Pakistan
+530,Deyana,579,F,murder,Y,China
+531,Elmus,57_,M,shoplifting,N,Nepal
+532,Effy,580,F,hijacking,Y,Australia
+533,Leandra,581,F,hijacking,Y,Russia
+534,Dionisio,582,M,murder,N,USA
+535,Kinsey,583,F,murder,Y,Russia
+536,Kivin,584,M,hacking,Y,Japan
+537,Judie,585,F,drug trafficking,Y,New Zealand
+538,Shenise,586,F,fraud,Y,Sri Lanka
+539,Paola,587,F,smuggling,Y,China
+540,Ariona,588,F,drug trafficking,Y,Nepal
+541,Gideon,589,M,terrorism,Y,China
+542,Roselie,58_,F,theft,N,Germany
+543,Carrie,590,F,assault,N,Sri Lanka
+544,Mitesh,591,M,terrorism,N,UK
+545,Hays,592,M,shoplifting,N,Pakistan
+546,Lorrine,593,F,human trafficking,Y,India
+547,Alaja,594,F,kidnapping,N,Japan
+548,Kelcie,595,F,vandalism,N,New Zealand
+549,Rico,596,M,human trafficking,N,Germany
+550,Tristan,597,M,terrorism,Y,Russia
+551,Edelmiro,598,M,drug trafficking,N,China
+552,Subrina,599,F,terrorism,Y,Russia
+553,Camari,59_,F,kidnapping,Y,New Zealand
+554,Ranita,5__,F,hijacking,N,Japan
+555,Seanna,600,F,vandalism,N,Nepal
+556,Ruta,60_,F,smuggling,N,New Zealand
+557,Calandra,61_,F,kidnapping,Y,Russia
+558,Juanjose,62_,M,hijacking,N,India
+559,Meir,63_,M,shoplifting,Y,UK
+560,Mina,64_,M,terrorism,N,Sri Lanka
+561,Jacquiline,65_,F,burglary,N,New Zealand
+562,Cornell,66_,F,theft,Y,New Zealand
+563,Dale,67_,M,hijacking,N,Russia
+564,Charna,68_,F,murder,N,Japan
+565,Alegra,69_,F,assault,Y,New Zealand
+566,Geralynn,6__,F,murder,Y,Bangladesh
+567,Diahann,70_,F,vandalism,Y,Pakistan
+568,Antorion,71_,M,theft,Y,USA
+569,Jose,72_,F,kidnapping,Y,Germany
+570,Mahlik,73_,M,murder,Y,Pakistan
+571,Keisha,74_,F,theft,N,Sri Lanka
+572,Jamelia,75_,F,hacking,N,Bangladesh
+573,Venton,76_,M,theft,Y,USA
+574,Symora,77_,F,shoplifting,N,Nepal
+575,Nathanael,78_,M,burglary,Y,Pakistan
+576,Algie,79_,M,murder,Y,India
+577,Gerik,7__,M,terrorism,N,Australia
+578,Tess,80_,F,burglary,Y,Australia
+579,Lemar,81_,M,shoplifting,Y,New Zealand
+580,Adeoluwa,82_,M,burglary,Y,Canada
+581,Allina,83_,F,burglary,Y,Australia
+582,America,84_,F,shoplifting,N,Japan
+583,Jonasia,85_,F,assault,Y,Nepal
+584,Agapito,86_,M,shoplifting,N,India
+585,Dariona,87_,F,shoplifting,Y,Pakistan
+586,Aldona,88_,F,hacking,Y,Bangladesh
+587,Valori,89_,F,kidnapping,Y,USA
+588,Stacy,8__,F,hacking,Y,Australia
+589,Meliyah,90_,F,burglary,N,Russia
+590,Halsey,91_,M,theft,Y,India
+591,Haliey,92_,F,vandalism,Y,Pakistan
+592,Telena,93_,F,fraud,N,USA
+593,Jeanna,94_,F,hacking,N,Germany
+594,Giavana,95_,F,hacking,N,Nepal
+595,Felix,96_,M,hijacking,Y,India
+596,Alan,97_,M,murder,N,Bangladesh
+597,Haniel,98_,M,shoplifting,Y,India
+598,Kimmie,99_,F,murder,N,Japan
+599,Venessa,9__,F,smuggling,N,USA
