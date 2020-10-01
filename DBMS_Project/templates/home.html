@@ -1,0 +1,33 @@
+
+{% extends "base.html" %}
+
+{% block title %} Home {% endblock %}
+
+{% block heading %}
+<center>All Criminal's Information</center>
+{% endblock %}
+
+{% block content%}
+  <table>
+    <tr>
+      <th>Image</th>
+        <th>Name</th>
+        <th>Crime</th>
+        <th>In Jail</th>
+        <th>Country</th>
+    </tr>
+    {% for criminal in criminals %}
+    <tr>
+        <td >
+            <a href="{{url_for('criminal_details', criminal_id = criminal.id)}}">
+                <img src= "{{url_for('static', filename = criminal.photo|string+".jpg")}}" height="100" >
+            </a>
+        </td>
+        <td>{{criminal.Name}}</td>
+        <td style="color:red">{{criminal.crime}}</td>
+        <td>{{criminal.inJail}}</td>
+        <td>{{criminal.country}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+{% endblock %}
