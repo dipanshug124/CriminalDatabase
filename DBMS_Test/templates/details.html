@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block title %} {{criminal.Name}}'s Details {% endblock %}
+
+{% block content %}
+    <div style="float:left; border-style:double;">
+<!--        <img src= "{{url_for('static', filename = criminal["photo"]|string+".jpg")}}" height="350" >-->
+            <img src= "{{url_for('static', filename = criminal.photo)}}" height="350" >
+            <button style="background-color:tomato" onclick="location.href='{{ url_for('delete_criminal', criminal_id = criminal.id)}}'"> Delete Criminal </button>
+
+    </div>
+    <div style="float:left; margin:10px;">
+        <h1 class="title">{{ criminal.Name }}</h1>
+        <p style="color : red "><b>Crime: &nbsp;</b>{{criminal.crime}}</p>
+        <p><b>In Jail: &nbsp;</b> {{criminal.inJail}}</p>
+        <p><b>Gender: &nbsp;</b> {{criminal.gender}}</p>
+        <p><b>Country: &nbsp;</b> {{criminal.country}}</p>
+        <hr>
+
+        <h2> Edit Criminal </h2>
+        <!-- Error Message  -->
+        {% if message %}
+            <span style="background-color:tomato">
+            {{ message }}
+            </span>
+            <br>
+        {% endif %}
+                 <!--  -->
+        <!-- Form for Editing the Criminal -->
+        <form action="{{url_for('criminal_details', criminal_id = criminal.id)}}" method="POST" style="padding:5px;" enctype="multipart/form-data">
+            {{ form.hidden_tag() }}
+            {{ form.Name.label }}: <br>
+            {{ form.Name(value = criminal.Name) }}
+            <br>
+             {{ form.img.label }}: <br>
+            {{ form.img(value=criminal.img)}}
+            <br>
+            {{ form.gender.label }}: <br>
+            {{ form.gender(value = criminal.gender) }}
+            <br>
+            {{ form.crime.label }}: <br>
+            {{ form.crime(value = criminal.crime) }}
+            <br>
+            {{ form.inJail.label }}: <br>
+            {{ form.inJail(value = criminal.inJail) }}
+            <br>
+            {{ form.country.label }}: <br>
+            {{ form.country(value = criminal.country) }}
+            <br>
+            {{ form.csrf_token }}
+            {{ form.submit }}
+        </form>
+    </div>
+    <div style="float:center;">
+        <img src= "{{url_for('static', filename = "fingerprint/"+criminal.fingerprint)}}" height="200" >
+    </div>
+{% endblock %}

@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+
+{% block title %}
+Add Criminal
+{% endblock %}
+
+{% block heading %}
+Add Criminal
+{% endblock %}
+
+{% block content %}
+{% if message %}
+    {{ message }}
+{% endif %}
+
+{% if form %}
+<form action="{{url_for('addpage')}}" method="POST" style="padding:5px;" enctype="multipart/form-data">
+    {{ form.hidden_tag() }}
+    <!-- Name-->
+    {{form.Name.label}}:<br>
+    {{form.Name}}<br>
+    {% if form.Name.errors %}
+        {% for error in form.Name.errors %}
+        <b style="color:tomato;"> {{ error }} </b>
+        <br>
+        {% endfor %}
+    {% endif %}<br>
+    <!--img-->
+    {{form.img.label}}:<br>
+    {{form.img}}<br>
+    {% if form.img.errors %}
+        {% for error in form.img.errors %}
+        <b style="color:tomato;"> {{ error }} </b>
+        <br>
+        {% endfor %}
+    {% endif %}
+    <br>
+    <!--fingerprint-->
+    {{form.fingerprintImg.label}}:<br>
+    {{form.fingerprintImg}}<br>
+    {% if form.fingerprintImg.errors %}
+        {% for error in form.fingerprintImg.errors %}
+        <b style="color:tomato;"> {{ error }} </b>
+        <br>
+        {% endfor %}
+    {% endif %}
+    <br>
+    <!--gender-->
+    {{form.gender.label}}:<br>
+    {{form.gender}}<br>
+    <br>
+    {% if form.gender.errors %}
+        {% for error in form.gender.errors %}
+        <b style="color:tomato;"> {{ error }} </b>
+        <br>
+        {% endfor %}
+    {% endif %}
+    <!--Crime-->
+    {{form.crime.label}}:<br>
+    {{form.crime}}<br>
+    <br>
+    {% if form.crime.errors %}
+        {% for error in form.crime.errors %}
+        <b style="color:tomato;"> {{ error }} </b>
+        <br>
+        {% endfor %}
+    {% endif %}
+    <!-- In Jail-->
+    {{form.inJail.label}}:<br>
+    {{form.inJail}}<br>
+    <br>
+    {% if form.inJail.errors %}
+        {% for error in form.inJail.errors %}
+        <b style="color:tomato;"> {{ error }} </b>
+        <br>
+        {% endfor %}
+    {% endif %}
+    <!-- Country-->
+    {{form.country.label}}:<br>
+    {{form.country}}<br>
+    <br>
+    {% if form.country.errors %}
+        {% for error in form.country.errors %}
+        <b style="color:tomato;"> {{ error }} </b>
+        <br>
+        {% endfor %}
+    {% endif %}
+     <!-- Hidden CSRF Token Field -->
+    {{ form.csrf_token }}
+     <!-- Submit Field -->
+    {{ form.submit }}
+</form>
+{% endif %}
+{% endblock %}
