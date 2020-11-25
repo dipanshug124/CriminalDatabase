@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}
+Login
+{% endblock %}
+
+{% block heading %}
+<center>
+Login
+</center>
+{% endblock %}
+
+{% block content %}
+<center>
+{% if message %}
+    {{ message }}
+{% endif %}
+
+{% if form %}
+
+<form action="{{url_for('login')}}" method="POST" style="padding:5px;">
+    {{ form.admin.label }}: <br>
+    {{ form.admin }}<br>
+    {{ form.password.label }}: <br>
+    {{ form.password }}<br>
+    {{ form.csrf_token }}
+    <br>
+    {{ form.submit }}
+</form>
+{% endif %}
+</center>
+{% endblock %}

@@ -2,7 +2,7 @@
 {% extends "base.html" %}
 
 {% block title %} Home {% endblock %}
-
+{% block anchor%} {{type}} {%endblock%}
 {% block heading %}
 <center>All Criminal's Information</center>
 {% endblock %}
@@ -11,10 +11,10 @@
   <table>
     <tr>
       <th>Image</th>
-        <th>Name</th>
+        <th>Criminal's Name</th>
         <th>Crime</th>
-        <th>In Jail</th>
-        <th>Country</th>
+        <th>Punishment</th>
+        <th>Prison Location</th>
     </tr>
     {% for criminal in criminals %}
     <tr>
@@ -25,8 +25,8 @@
         </td>
         <td>{{criminal.Name}}</td>
         <td style="color:red">{{criminal.crime}}</td>
-        <td>{{criminal.inJail}}</td>
-        <td>{{criminal.country}}</td>
+        <td>{{criminal.punishment}}</td>
+        <td>{{criminal.prison}}</td>
     </tr>
     {% endfor %}
   </table>

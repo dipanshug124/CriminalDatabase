@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}
+Creating New User
+{% endblock %}
+
+{% block heading %}
+<center>
+Create New User
+</center>
+{% endblock %}
+
+{% block content %}
+<center>
+{% if message %}
+    {{ message }}
+{% endif %}
+
+{% if form %}
+
+<form action="{{url_for('newuser')}}" method="POST" style="padding:5px;">
+    {{ form.hidden_tag() }}
+    {{ form.admin.label }}: <br>
+    {{ form.admin }}<br>
+    {{ form.password.label }}: <br>
+    {{ form.password }}<br>
+    {{ form.csrf_token }}
+    <br>
+    {{ form.submit }}
+</form>
+{% endif %}
+</center>
+{% endblock %}

@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block title %} {{criminal.Name}}'s Details {% endblock %}
+{% block anchor%} {{type}} {%endblock%}
 
 {% block content %}
     <div style="float:left; border-style:double;">
@@ -11,13 +12,20 @@
     </div>
     <div style="float:left; margin:10px;">
         <h1 class="title">{{ criminal.Name }}</h1>
+        <h1 class="title">Case No:{{ criminal.caseno }}</h1>
         <p style="color : red "><b>Crime: &nbsp;</b>{{criminal.crime}}</p>
-        <p><b>In Jail: &nbsp;</b> {{criminal.inJail}}</p>
+        <p><b>Address: &nbsp;</b> {{criminal.address}}</p>
         <p><b>Gender: &nbsp;</b> {{criminal.gender}}</p>
-        <p><b>Country: &nbsp;</b> {{criminal.country}}</p>
+        <p><b>Crime Location: &nbsp;</b> {{criminal.crimelocation}}</p>
+        <p><b>Prison Location: &nbsp;</b> {{criminal.prison}}</p>
+        <p><b>Court Name: &nbsp;</b> {{criminal.courtname}}</p>
+        <p><b>Duty Police: &nbsp;</b> {{criminal.dutypolice}}</p>
+        <p><b>Punishment: &nbsp;</b> {{criminal.punishment}}</p>
+        <p><b>Start Date of Punishment: &nbsp;</b> {{criminal.startdate}}</p>
+        <p><b>End Date of Punishment: &nbsp;</b> {{criminal.enddate}}</p>
         <hr>
 
-        <h2> Edit Criminal </h2>
+        <h2  style="float:left; margin:10px;"> Edit Criminal </h2><br>
         <!-- Error Message  -->
         {% if message %}
             <span style="background-color:tomato">
@@ -29,8 +37,12 @@
         <!-- Form for Editing the Criminal -->
         <form action="{{url_for('criminal_details', criminal_id = criminal.id)}}" method="POST" style="padding:5px;" enctype="multipart/form-data">
             {{ form.hidden_tag() }}
+            <br><br>
             {{ form.Name.label }}: <br>
             {{ form.Name(value = criminal.Name) }}
+            <br>
+            {{ form.caseno.label }}: <br>
+            {{ form.caseno(value=criminal.caseno)}}
             <br>
              {{ form.img.label }}: <br>
             {{ form.img(value=criminal.img)}}
@@ -38,14 +50,32 @@
             {{ form.gender.label }}: <br>
             {{ form.gender(value = criminal.gender) }}
             <br>
+            {{ form.address.label }}: <br>
+            {{ form.address(value = criminal.address) }}
+            <br>
             {{ form.crime.label }}: <br>
             {{ form.crime(value = criminal.crime) }}
             <br>
-            {{ form.inJail.label }}: <br>
-            {{ form.inJail(value = criminal.inJail) }}
+            {{ form.crimelocation.label }}: <br>
+            {{ form.crimelocation(value = criminal.crimelocation) }}
             <br>
-            {{ form.country.label }}: <br>
-            {{ form.country(value = criminal.country) }}
+            {{ form.prison.label }}: <br>
+            {{ form.prison(value = criminal.prison) }}
+            <br>
+            {{ form.courtname.label }}: <br>
+            {{ form.courtname(value = criminal.courtname) }}
+            <br>
+            {{ form.dutypolice.label }}: <br>
+            {{ form.dutypolice(value = criminal.dutypolice) }}
+            <br>
+            {{ form.punishment.label }}: <br>
+            {{ form.punishment(value = criminal.punishment) }}
+            <br>
+            {{ form.startdate.label }}: <br>
+            {{ form.startdate(value = criminal.startdate) }}
+            <br>
+            {{ form.enddate.label }}: <br>
+            {{ form.enddate(value = criminal.enddate) }}
             <br>
             {{ form.csrf_token }}
             {{ form.submit }}

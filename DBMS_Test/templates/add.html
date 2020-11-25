@@ -3,15 +3,21 @@
 {% block title %}
 Add Criminal
 {% endblock %}
+{% block anchor%} {{type}} {%endblock%}
 
 {% block heading %}
+<center>
 Add Criminal
+</center>
 {% endblock %}
 
 {% block content %}
+<center>
 {% if message %}
     {{ message }}
 {% endif %}
+
+
 
 {% if form %}
 <form action="{{url_for('addpage')}}" method="POST" style="padding:5px;" enctype="multipart/form-data">
@@ -24,6 +30,15 @@ Add Criminal
         <b style="color:tomato;"> {{ error }} </b>
         <br>
         {% endfor %}
+    {% endif %}<br>
+    <!--CaseNO-->
+    {{form.caseno.label}}:<br>
+    {{form.caseno}}<br>
+    {% if form.caseno.errors %}
+    {% for error in form.caseno.errors %}
+    <b style="color:tomato;"> {{ error }} </b>
+    <br>
+    {% endfor %}
     {% endif %}<br>
     <!--img-->
     {{form.img.label}}:<br>
@@ -55,6 +70,15 @@ Add Criminal
         <br>
         {% endfor %}
     {% endif %}
+    <!--Address-->
+    {{form.address.label}}:<br>
+    {{form.address}}<br>
+    {% if form.address.errors %}
+    {% for error in form.address.errors %}
+    <b style="color:tomato;"> {{ error }} </b>
+    <br>
+    {% endfor %}
+    {% endif %}<br>
     <!--Crime-->
     {{form.crime.label}}:<br>
     {{form.crime}}<br>
@@ -65,26 +89,71 @@ Add Criminal
         <br>
         {% endfor %}
     {% endif %}
-    <!-- In Jail-->
-    {{form.inJail.label}}:<br>
-    {{form.inJail}}<br>
+    <!--CrimeLocation-->
+    {{form.crimelocation.label}}:<br>
+    {{form.crimelocation}}<br>
+    {% if form.crimelocation.errors %}
+    {% for error in form.crimelocation.errors %}
+    <b style="color:tomato;"> {{ error }} </b>
     <br>
-    {% if form.inJail.errors %}
-        {% for error in form.inJail.errors %}
+    {% endfor %}
+    {% endif %}<br>
+    <!--Prison Location-->
+    {{form.prison.label}}:<br>
+    {{form.prison}}<br>
+    {% if form.prison.errors %}
+    {% for error in form.prison.errors %}
+    <b style="color:tomato;"> {{ error }} </b>
+    <br>
+    {% endfor %}
+    {% endif %}<br>
+    <!-- Court name-->
+    {{form.courtname.label}}:<br>
+    {{form.courtname}}<br>
+    <br>
+    {% if form.courtname.errors %}
+        {% for error in form.courtname.errors %}
         <b style="color:tomato;"> {{ error }} </b>
         <br>
         {% endfor %}
     {% endif %}
-    <!-- Country-->
-    {{form.country.label}}:<br>
-    {{form.country}}<br>
+    <!-- Duty police-->
+    {{form.dutypolice.label}}:<br>
+    {{form.dutypolice}}<br>
     <br>
-    {% if form.country.errors %}
-        {% for error in form.country.errors %}
+    {% if form.dutypolice.errors %}
+        {% for error in form.dutypolice.errors %}
         <b style="color:tomato;"> {{ error }} </b>
         <br>
         {% endfor %}
-    {% endif %}
+    {% endif %}<br>
+    <!--Punishment-->
+    {{form.punishment.label}}:<br>
+    {{form.punishment}}<br>
+    {% if form.punishment.errors %}
+    {% for error in form.punishment.errors %}
+    <b style="color:tomato;"> {{ error }} </b>
+    <br>
+    {% endfor %}
+    {% endif %}<br>
+    <!--Startdate-->
+    {{form.startdate.label}}:<br>
+    {{form.startdate}}<br>
+    {% if form.startdate.errors %}
+    {% for error in form.startdate.errors %}
+    <b style="color:tomato;"> {{ error }} </b>
+    <br>
+    {% endfor %}
+    {% endif %}<br>
+    <!--Enddate-->
+    {{form.enddate.label}}:<br>
+    {{form.enddate}}<br>
+    {% if form.enddate.errors %}
+    {% for error in form.enddate.errors %}
+    <b style="color:tomato;"> {{ error }} </b>
+    <br>
+    {% endfor %}
+    {% endif %}<br>
      <!-- Hidden CSRF Token Field -->
     {{ form.csrf_token }}
      <!-- Submit Field -->
@@ -92,3 +161,4 @@ Add Criminal
 </form>
 {% endif %}
 {% endblock %}
+</center>
