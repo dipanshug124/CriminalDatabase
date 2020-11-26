@@ -1,5 +1,5 @@
 from os import abort
-from flask import Flask, render_template, abort
+from flask import Flask, render_template, abort,flash
 from flask import session, redirect, url_for,request
 from flask_sqlalchemy import SQLAlchemy
 from forms import EditCriminalRecord,AddCriminal,Login,AddAdmin,AddGrievance
@@ -112,6 +112,19 @@ def usergrievancepage():
     if isLogin == False:
          return render_template("usergrievance.html", grievance=grievance)
     return render_template("admingrievance.html",grievance=grievance)  
+
+#Solve Grievance
+@app.route('/dashboard/<int:grievance_id>', methods=["GET","POST"])
+def delete_grievance(grievance_id):
+    grievance_id = Grievance.query.get_or_404(grievance_id)
+    db.session.delete(grievance_id)
+    db.session.commit()
+    flash('Grievance Solved')
+    try:
+        db.session.commit()
+    except Exception as e:
+        db.session.rollback()
+    return redirect(url_for('homepage'))
 
 #Grievance
 @app.route("/grievance", methods=["POST", "GET"])
@@ -289,7 +302,7 @@ def delete_criminal(criminal_id):
         db.session.commit()
     except Exception as e:
         db.session.rollback()
-    return redirect(url_for('homepage', _scheme='https', _external=True))
+    return redirect(url_for('homepage'))
 
 if __name__ == "__main__":
     app.run(debug= True)
