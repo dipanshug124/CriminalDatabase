@@ -111,7 +111,7 @@ def usergrievancepage():
     grievance = Grievance.query.all()
     if isLogin == False:
          return render_template("usergrievance.html", grievance=grievance)
-    return render_template("usergrievance.html",grievance=grievance)  
+    return render_template("admingrievance.html",grievance=grievance)  
 
 #Grievance
 @app.route("/grievance", methods=["POST", "GET"])
@@ -139,7 +139,7 @@ def grievancepage():
             return render_template("grievance.html", form = form)
         return render_template('grievance.html',form= form)
     else:
-        return render_template('admingrievance.html',grievance=grievance)
+        return render_template('usergrievance.html',grievance=grievance)
 
 #search
 @app.route('/search')
@@ -284,6 +284,7 @@ def delete_criminal(criminal_id):
     if criminal is None:
         abort(404, description="No Criminal was Found with the given ID")
     db.session.delete(criminal)
+    
     try:
         db.session.commit()
     except Exception as e:
