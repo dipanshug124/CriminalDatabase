@@ -45,3 +45,9 @@ class AddAdmin(FlaskForm):
     admin = StringField("Username", validators=[InputRequired()])
     password = PasswordField("Password",validators=[InputRequired()])
     submit = SubmitField("Add Admin")
+
+class AddGrievance(FlaskForm):
+    name = StringField("Full Name",validators=[InputRequired()])
+    address = StringField("Address",validators=[InputRequired()])
+    description = StringField("Grievance Details",validators=[InputRequired()])
+    submit = SubmitField("Add Grievance")

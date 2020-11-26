@@ -2,7 +2,7 @@ from os import abort
 from flask import Flask, render_template, abort
 from flask import session, redirect, url_for,request
 from flask_sqlalchemy import SQLAlchemy
-from forms import EditCriminalRecord,AddCriminal,Login,AddAdmin
+from forms import EditCriminalRecord,AddCriminal,Login,AddAdmin,AddGrievance
 import sqlite3
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'dfewfew123213rwdsgert34tgfd1234trgf'
@@ -42,14 +42,23 @@ class Admins(db.Model):
     #Name = db.Column(db.String);
     password=db.Column(db.String,unique=True)
 
+#model for Grievance
+class Grievance(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name= db.Column(db.String)
+    #Name = db.Column(db.String);
+    address= db.Column(db.String)
+    description = db.Column(db.String)
+    #status = db.Column(db.String)
+
 db.create_all()
 superadmin="Police1234"
 superpassword="1234"
 currentadmin=""
 # Police1234 is superadmin
-# adminUser = Admins(admin="Police1234",password="1234")
-# db.session.add(adminUser)
-# db.session.commit()
+#adminUser = Admins(admin="Police1234",password="1234")
+#db.session.add(adminUser)
+#db.session.commit()
 # create all criminals
 
 # domanic = Criminal(photo="1p", Name="Domanic", gender="Male", crime="Hacking", inJail ="Yes", country="Germany" )
@@ -81,6 +90,7 @@ def homepage():
     type=""
     if isLogin==False:
         type="Login"
+
     else:
         type="Logout"
     return render_template("home.html", criminals = criminals,type=type)
@@ -95,17 +105,53 @@ def aboutpage():
         type="Logout"
     return render_template("about.html" ,type=type)
 
+#Grievance Dashboard
+@app.route("/dashboard",methods=["POST","GET"])
+def usergrievancepage():
+    grievance = Grievance.query.all()
+    if isLogin == False:
+         return render_template("usergrievance.html", grievance=grievance)
+    return render_template("usergrievance.html",grievance=grievance)  
+
+#Grievance
+@app.route("/grievance", methods=["POST", "GET"])
+def grievancepage():
+    grievance=Grievance.query.all()
+    if isLogin == False:
+       
+        #return redirect(url_for('grievancepage'))
+        form = AddGrievance()
+        if form.validate_on_submit():
+            grievances = Grievance(name=form.name.data, address = form.address.data, description= form.description.data)
+        # form.img.data.read() ->will give use raw data blob ;)
+            db.session.add(grievances)
+        # print(form.img.data.filename)
+        # print("File:{}".format(form.img.data.read()))
+            try:
+                db.session.commit()
+            except Exception as e:
+                print(e)
+                db.session.rollback()
+                return render_template("grievance.html", form = form, message = "Grievance already exists!")
+            finally:
+                db.session.close()
+                return render_template("grievance.html", message = "Grievance Added Successfully")
+            return render_template("grievance.html", form = form)
+        return render_template('grievance.html',form= form)
+    else:
+        return render_template('admingrievance.html',grievance=grievance)
+
 #search
 @app.route('/search')
 def search():
     s = request.args.get('search')
-    # criminals = Criminal.query.filter(Criminal.Name.like('%' + s + '%'))
-    # criminals += Criminal.query.filter(Criminal.crime.like('%' + s + '%'))
+    # criminals = Criminal.query.filter(Criminal.Name.like('%' + s + '%') )
+    criminals = Criminal.query.filter(Criminal.crime.like('%' + s + '%'))
     # criminals += Criminal.query.filter(Criminal.dutypolice.like('%' + s + '%'))
     # criminals += Criminal.query.filter(Criminal.courtname.like('%' + s + '%'))
     # criminals += Criminal.query.filter(Criminal.prison.like('%' + s + '%'))
     # criminals += Criminal.query.filter(Criminal.gender.like('%' + s + '%'))
-    criminals = Criminal.query.filter(Criminal.caseno.like('%' + s + '%'))
+    #criminals = Criminal.query.filter(Criminal.caseno.like('%' + s + '%') )
     # criminals += Criminal.query.filter(Criminal.crimelocation.like('%' + s + '%'))
     type = ""
     if isLogin == False:
@@ -165,7 +211,7 @@ def newuser():
                 return render_template("newuser.html", form=form, message="username or password already exists", type="Logout")
             finally:
                 db.session.close()
-            return render_template("newuser.html", message="Criminal Added Successfully", type="Logout")
+            return render_template("newuser.html", message="Admin Added Successfully", type="Logout")
 
         return render_template("newuser.html", form=form,message="Enter username and password ", type="Logout")
     else:
