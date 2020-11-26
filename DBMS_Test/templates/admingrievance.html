@@ -19,7 +19,10 @@
         <td>{{grievances.name}}</td>
         <td>{{grievances.address}}</td>
         <td>{{grievances.description}}</td>
-        <td><a href = "#">Solved</a><a href="#">/Not Solved</a></td>
+        <!--<td><a href = "#">Solved</a><a href="#">/Not Solved</a></td>-->
+        <td><button style="background-color:tomato"
+            onclick="location.href='{{ url_for('delete_grievance', grievance_id = grievances.id)}}'"> Solved </button>
+            </td>
     </tr>
     {% endfor %}
 </table>
