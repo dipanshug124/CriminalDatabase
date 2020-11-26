@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %} Grievance{% endblock %}
+{% block anchor%} {{type}} {%endblock%}
+{% block heading %}
+<center>All Grievances</center>
+{% endblock %}
+
+{% block content%}
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Grievance Description</th>
+        <th>Grievance Status</th>
+    </tr>
+    {% for grievances in grievance %}
+    <tr>
+        <td>{{grievances.name}}</td>
+        <td>{{grievances.address}}</td>
+        <td>{{grievances.description}}</td>
+      
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

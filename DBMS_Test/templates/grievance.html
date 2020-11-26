@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}
+Add Grievance
+{% endblock %}
+{% block anchor%} {{type}} {%endblock%}
+
+{% block heading %}
+<center>
+    Add Grievance
+</center>
+{% endblock %}
+
+{% block content %}
+<center>
+    {% if message %}
+    {{ message }}
+    {% endif %}
+
+
+
+    {% if form %}
+    <form action="{{url_for('grievancepage')}}" method="POST" style="padding:5px;" enctype="multipart/form-data">
+        {{ form.hidden_tag() }}
+        <!-- Name-->
+        {{form.name.label}}:<br>
+        {{form.name}}<br>
+        {% if form.name.errors %}
+        {% for error in form.name.errors %}
+        <b style="color:tomato;"> {{ error }} </b>
+        <br>
+        {% endfor %}
+        {% endif %}<br>
+        <!--Address-->
+        {{form.address.label}}:<br>
+        {{form.address}}<br>
+        {% if form.address.errors %}
+        {% for error in form.address.errors %}
+        <b style="color:tomato;"> {{ error }} </b>
+        {% endfor %}
+        {% endif %}
+        <br>
+        <!--Description-->
+        {{form.description.label}}:<br>
+        {{form.description}}<br>
+        {% if form.description.errors %}
+        {% for error in form.description.errors %}
+        <b style="color:tomato;"> {{ error }} </b>
+        {% endfor %}
+        {% endif %}<br>
+        
+        <!-- Hidden CSRF Token Field -->
+        {{ form.csrf_token }}
+        <!-- Submit Field -->
+        {{ form.submit }}
+    </form>
+    {% endif %}
+    {% endblock %}
+</center>
