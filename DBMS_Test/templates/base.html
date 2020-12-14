@@ -88,11 +88,11 @@ body {
     <a class="active" href="{{ url_for('homepage')}}">Home</a>
    
     <a href="{{ url_for('addpage')}}">Add Criminal</a>
-    <a href="{{url_for('aboutpage')}}">About</a>
     <a href="{{url_for('newuser')}}">Add admin</a>
     <a href="{{url_for('grievancepage')}}">Add Grievance</a>
     <a href="{{url_for('usergrievancepage')}}">Grievance Dashboard</a>
     <a href="{{url_for('login')}}">{% block anchor %} {% endblock %}</a>
+    <a href="{{url_for('aboutpage')}}">About</a>
     <div class="search-container">
     <form action="{{ url_for('search')}}" method="GET">
       <input type="text" placeholder="Search.." name="search" id="search" autocomplete="off">

@@ -19,12 +19,12 @@ Login
 {% if form %}
 
 <form action="{{url_for('login')}}" method="POST" style="padding:5px;">
-    {{ form.admin.label }}: <br>
-    {{ form.admin }}<br>
-    {{ form.password.label }}: <br>
-    {{ form.password }}<br>
+    {{ form.admin.label }}:
+    {{ form.admin }}<br><br>
+    {{ form.password.label }}:
+    {{ form.password }}<br><br>
     {{ form.csrf_token }}
-    <br>
+    <br><br>
     {{ form.submit }}
 </form>
 {% endif %}

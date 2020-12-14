@@ -38,43 +38,43 @@
         <form action="{{url_for('criminal_details', criminal_id = criminal.id)}}" method="POST" style="padding:5px;" enctype="multipart/form-data">
             {{ form.hidden_tag() }}
             <br><br>
-            {{ form.Name.label }}: <br>
+            {{ form.Name.label }}:
             {{ form.Name(value = criminal.Name) }}
             <br><br>
-            {{ form.caseno.label }}: <br>
+            {{ form.caseno.label }}:
             {{ form.caseno(value=criminal.caseno)}}
             <br><br>
-             {{ form.img.label }}: <br>
+             {{ form.img.label }}:
             {{ form.img(value=criminal.img)}}
             <br><br>
-            {{ form.gender.label }}: <br>
+            {{ form.gender.label }}:
             {{ form.gender(value = criminal.gender) }}
             <br><br>
-            {{ form.address.label }}: <br>
+            {{ form.address.label }}:
             {{ form.address(value = criminal.address) }}
             <br><br>
-            {{ form.crime.label }}: <br>
+            {{ form.crime.label }}:
             {{ form.crime(value = criminal.crime) }}
             <br><br>
-            {{ form.crimelocation.label }}: <br>
+            {{ form.crimelocation.label }}:
             {{ form.crimelocation(value = criminal.crimelocation) }}
             <br><br>
-            {{ form.prison.label }}: <br>
+            {{ form.prison.label }}:
             {{ form.prison(value = criminal.prison) }}
             <br><br>
-            {{ form.courtname.label }}: <br>
+            {{ form.courtname.label }}:
             {{ form.courtname(value = criminal.courtname) }}
             <br><br>
-            {{ form.dutypolice.label }}: <br>
+            {{ form.dutypolice.label }}:
             {{ form.dutypolice(value = criminal.dutypolice) }}
             <br><br>
-            {{ form.punishment.label }}: <br>
+            {{ form.punishment.label }}:
             {{ form.punishment(value = criminal.punishment) }}
             <br><br>
-            {{ form.startdate.label }}: <br>
+            {{ form.startdate.label }}:
             {{ form.startdate(value = criminal.startdate) }}
             <br><br>
-            {{ form.enddate.label }}: <br>
+            {{ form.enddate.label }}:
             {{ form.enddate(value = criminal.enddate) }}
             <br><br>
             {{ form.csrf_token }}

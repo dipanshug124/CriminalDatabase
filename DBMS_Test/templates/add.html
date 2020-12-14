@@ -23,7 +23,7 @@ Add Criminal
 <form action="{{url_for('addpage')}}" method="POST" style="padding:5px;" enctype="multipart/form-data">
     {{ form.hidden_tag() }}
     <!-- Name-->
-    {{form.Name.label}}:<br>
+    {{form.Name.label}}:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     {{form.Name}}<br>
     {% if form.Name.errors %}
         {% for error in form.Name.errors %}
@@ -32,7 +32,7 @@ Add Criminal
         {% endfor %}
     {% endif %}<br>
     <!--CaseNO-->
-    {{form.caseno.label}}:<br>
+    {{form.caseno.label}}:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     {{form.caseno}}<br>
     {% if form.caseno.errors %}
     {% for error in form.caseno.errors %}
@@ -41,7 +41,7 @@ Add Criminal
     {% endfor %}
     {% endif %}<br>
     <!--img-->
-    {{form.img.label}}:<br>
+    {{form.img.label}}:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     {{form.img}}<br>
     {% if form.img.errors %}
         {% for error in form.img.errors %}
@@ -51,7 +51,7 @@ Add Criminal
     {% endif %}
     <br>
     <!--fingerprint-->
-    {{form.fingerprintImg.label}}:<br>
+    {{form.fingerprintImg.label}}:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     {{form.fingerprintImg}}<br>
     {% if form.fingerprintImg.errors %}
         {% for error in form.fingerprintImg.errors %}
@@ -61,7 +61,7 @@ Add Criminal
     {% endif %}
     <br>
     <!--gender-->
-    {{form.gender.label}}:<br>
+    {{form.gender.label}}:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     {{form.gender}}<br>
     <br>
     {% if form.gender.errors %}
@@ -71,7 +71,7 @@ Add Criminal
         {% endfor %}
     {% endif %}
     <!--Address-->
-    {{form.address.label}}:<br>
+    {{form.address.label}}:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     {{form.address}}<br>
     {% if form.address.errors %}
     {% for error in form.address.errors %}
@@ -80,7 +80,7 @@ Add Criminal
     {% endfor %}
     {% endif %}<br>
     <!--Crime-->
-    {{form.crime.label}}:<br>
+    {{form.crime.label}}:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     {{form.crime}}<br>
     <br>
     {% if form.crime.errors %}
@@ -90,7 +90,7 @@ Add Criminal
         {% endfor %}
     {% endif %}
     <!--CrimeLocation-->
-    {{form.crimelocation.label}}:<br>
+    {{form.crimelocation.label}}:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     {{form.crimelocation}}<br>
     {% if form.crimelocation.errors %}
     {% for error in form.crimelocation.errors %}
@@ -99,7 +99,7 @@ Add Criminal
     {% endfor %}
     {% endif %}<br>
     <!--Prison Location-->
-    {{form.prison.label}}:<br>
+    {{form.prison.label}}:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     {{form.prison}}<br>
     {% if form.prison.errors %}
     {% for error in form.prison.errors %}
@@ -108,7 +108,7 @@ Add Criminal
     {% endfor %}
     {% endif %}<br>
     <!-- Court name-->
-    {{form.courtname.label}}:<br>
+    {{form.courtname.label}}:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     {{form.courtname}}<br>
     <br>
     {% if form.courtname.errors %}
@@ -118,7 +118,7 @@ Add Criminal
         {% endfor %}
     {% endif %}
     <!-- Duty police-->
-    {{form.dutypolice.label}}:<br>
+    {{form.dutypolice.label}}:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     {{form.dutypolice}}<br>
     <br>
     {% if form.dutypolice.errors %}
@@ -128,7 +128,7 @@ Add Criminal
         {% endfor %}
     {% endif %}<br>
     <!--Punishment-->
-    {{form.punishment.label}}:<br>
+    {{form.punishment.label}}:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     {{form.punishment}}<br>
     {% if form.punishment.errors %}
     {% for error in form.punishment.errors %}
@@ -137,7 +137,7 @@ Add Criminal
     {% endfor %}
     {% endif %}<br>
     <!--Startdate-->
-    {{form.startdate.label}}:<br>
+    {{form.startdate.label}}:
     {{form.startdate}}<br>
     {% if form.startdate.errors %}
     {% for error in form.startdate.errors %}
@@ -146,7 +146,7 @@ Add Criminal
     {% endfor %}
     {% endif %}<br>
     <!--Enddate-->
-    {{form.enddate.label}}:<br>
+    {{form.enddate.label}}:&nbsp;
     {{form.enddate}}<br>
     {% if form.enddate.errors %}
     {% for error in form.enddate.errors %}

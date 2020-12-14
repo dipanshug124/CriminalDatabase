@@ -23,17 +23,17 @@ Add Grievance
     <form action="{{url_for('grievancepage')}}" method="POST" style="padding:5px;" enctype="multipart/form-data">
         {{ form.hidden_tag() }}
         <!-- Name-->
-        {{form.name.label}}:<br>
-        {{form.name}}<br>
+        {{form.name.label}}:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        {{form.name}}<br><br>
         {% if form.name.errors %}
         {% for error in form.name.errors %}
         <b style="color:tomato;"> {{ error }} </b>
         <br>
         {% endfor %}
-        {% endif %}<br>
+        {% endif %}<br><br>
         <!--Address-->
-        {{form.address.label}}:<br>
-        {{form.address}}<br>
+        {{form.address.label}}:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        {{form.address}}<br><br>
         {% if form.address.errors %}
         {% for error in form.address.errors %}
         <b style="color:tomato;"> {{ error }} </b>
@@ -41,8 +41,8 @@ Add Grievance
         {% endif %}
         <br>
         <!--Description-->
-        {{form.description.label}}:<br>
-        {{form.description}}<br>
+        {{form.description.label}}:
+        {{form.description}}<br><br>
         {% if form.description.errors %}
         {% for error in form.description.errors %}
         <b style="color:tomato;"> {{ error }} </b>

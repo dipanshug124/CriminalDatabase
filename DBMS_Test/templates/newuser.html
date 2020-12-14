@@ -19,13 +19,14 @@ Create New User
 {% if form %}
 
 <form action="{{url_for('newuser')}}" method="POST" style="padding:5px;">
+    <br><br>
     {{ form.hidden_tag() }}
-    {{ form.admin.label }}: <br>
-    {{ form.admin }}<br>
-    {{ form.password.label }}: <br>
-    {{ form.password }}<br>
+    {{ form.admin.label }}:
+    {{ form.admin }}<br><br>
+    {{ form.password.label }}:
+    {{ form.password }}<br><br>
     {{ form.csrf_token }}
-    <br>
+    <br><br>
     {{ form.submit }}
 </form>
 {% endif %}
